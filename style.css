@@ -287,7 +287,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(0); /* Slide overlay on hover */
 }
 
-/* Scoped styles for the second carousel */
+/* upcoming event */
 .upcoming {
   background-color: var(--light-bg); /* Set the background color of the carousel */
 }
@@ -393,6 +393,51 @@ h1, h2, h3, h4, h5, h6 {
 #events-carousel-2 .card:hover img {
   transform: scale(1.05); /* Slight zoom effect */
 }
+/* Media Query for tablets and below */
+@media (max-width: 768px) {
+  #events-carousel-2 .carousel-control-prev,
+  #events-carousel-2 .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for better visibility */
+  }
+
+  #events-carousel-2 .card {
+    padding: 5px; /* Reduce padding on smaller screens */
+    width: 100%; /* Full width for cards on smaller screens */
+  }
+
+  #events-carousel-2 .card img {
+    height: auto; /* Ensure images scale well */
+  }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+  #events-carousel-2 .carousel-control-prev,
+  #events-carousel-2 .carousel-control-next {
+    width: 35px;
+    height: 35px;
+  }
+
+  #events-carousel-2 .card {
+    padding: 4px; /* Further reduce padding */
+  }
+
+  #events-carousel-2 .card img {
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  #events-carousel-2 .card h2 {
+    font-size: 1.25rem; /* Adjust font size */
+  }
+
+  #events-carousel-2 .card button {
+    font-size: 0.875rem; /* Adjust button text size */
+    padding: 6px 12px; /* Adjust button padding */
+  }
+}
+
 
 /* Gallery Images */
 .gallery-imgs:hover img {
@@ -459,7 +504,6 @@ h1, h2, h3, h4, h5, h6 {
 #why-choose-zephyr {
   background-color: var(--primary-bg); /* Background color */
 }
-
 
 
 
