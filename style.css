@@ -26,7 +26,25 @@ h1, h2, h3, h4, h5, h6 {
 /* Navigation Bar */
 .nav-bar {
   background-color: var(--primary-bg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
+/* the logo is centered in mobile view */
+@media (max-width: 1024px) {
+  .logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
 
 .navbar-link {
   text-decoration: none;
@@ -39,6 +57,16 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid var(--secondary-text);
   padding-bottom: 0.45rem; /* Adjust padding on hover */
 }
+
+.main-h2{
+ font-size: larger;
+}
+
+
+
+
+
+
 
 /* Style for h2 headings with a small underline */
 .bordr-head {
@@ -93,6 +121,19 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   width: 100%;
 }
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Black background with 50% opacity */
+  padding: 1rem; /* Adjust padding as needed */
+
+  text-align: center; /* Optional: Center the text */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
 
 /* Custom Banner Shadow */
 .custom-banner-shadow {
@@ -355,16 +396,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Gallery Images */
 .gallery-imgs:hover img {
-  transform: scale(1.1); /* Zoom on hover */
+  transform: scale(1.1); 
 }
 
 .gallery-imgs:hover .group-hover\:opacity-50 {
-  opacity: 0.5; /* Overlay opacity on hover */
+  opacity: 0.5; 
 }
 
 /* Booking Process */
 .booking-process {
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: #f9f9f9; 
 }
 
 .steps {
@@ -376,14 +417,14 @@ h1, h2, h3, h4, h5, h6 {
 .steps-row {
   display: flex;
   justify-content: center;
-  gap: 2rem; /* Spacing between steps */
-  margin-bottom: 2rem; /* Space between rows */
+  gap: 2rem; 
+  margin-bottom: 2rem; 
 }
 
 .step {
   text-align: center;
   flex: 1;
-  max-width: 300px; /* Limit width of each step */
+  max-width: 300px; 
   position: relative;
 }
 
@@ -393,13 +434,43 @@ h1, h2, h3, h4, h5, h6 {
 
 .step i {
   font-size: 2rem;
-  color: var(--gray-text); /* Icon color */
+  color: var(--gray-text);
 }
 
-.booking-process .fas, h3 {
-  color: var(--primary-text); /* Text color for booking process */
+.booking-process .fas {
+  color: var(--primary-text); 
+}
+
+@media (max-width: 768px) {
+  .steps-row {
+    flex-direction: column; /* Stack steps vertically */
+    align-items: center; /* Center align items */
+  }
+  
+  .step {
+    max-width: 100%; /* Full width for steps on smaller screens */
+  }
+  
+  .booking-process {
+    padding: 1rem; /* Less padding on smaller screens */
+  }
 }
 
 #why-choose-zephyr {
   background-color: var(--primary-bg); /* Background color */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
