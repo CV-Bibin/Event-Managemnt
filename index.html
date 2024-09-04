@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon"  type="image/png" href="./images/logo.png">
+  <link rel="icon" type="image/png" href="./images/logo.png">
   <title>Zephyr Events</title>
 
   <!-- Tailwind CSS for utility-first styling -->
@@ -26,20 +26,11 @@
 
 <body>
   <!-- Header Section -->
-  <header class="bg-golden nav-bar">
+  <header class="bg-golden nav-bar sticky top-0 z-50">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
 
-      <!-- Logo and Company Name -->
-      <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Zephyr</span>
-          <img class="h-12 w-auto" src="/images/logo.png" alt="logo">
-          
-        </a>
-      </div>
-
       <!-- Mobile Menu Button -->
-      <div class="flex lg:hidden">
+      <div class="lg:hidden flex items-center">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Open main menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -47,6 +38,15 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
+      </div>
+
+     
+      <!-- Logo and Company Name -->
+      <div class="logo-container lg:flex-1 lg:flex-none flex justify-center lg:justify-start">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Zephyr</span>
+          <img class="h-12 w-auto" src="./images/logo.png" alt="logo">
+        </a>
       </div>
 
       <!-- Desktop Navigation Links -->
@@ -67,49 +67,8 @@
         </a>
       </div>
     </nav>
-
-    <!-- Mobile Menu (Slide-over) -->
-    <div class="lg:hidden" role="dialog" aria-modal="true">
-      <!-- Background Backdrop -->
-      <div class="fixed inset-0 z-10"></div>
-      <div
-        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Zephyr</span>
-            <img class="h-8 w-auto" src="./images/logo.png" alt="logo">
-          </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-            <span class="sr-only">Close menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-500/10">
-            <div class="space-y-2 py-6">
-              <a href="#"
-                class="navbar-link -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50">Home</a>
-              <a href="#"
-                class="navbar-link -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50">Services</a>
-              <a href="#"
-                class="navbar-link -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50">Portfolio</a>
-              <a href="#"
-                class="navbar-link -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50">Contact</a>
-            </div>
-            <div class="py-6">
-              <a href="#"
-                class="navbar-link -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white no-underline transition duration-300">
-                Log in
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </header>
+
 
   <!-- Main Content -->
   <main>
@@ -120,48 +79,48 @@
         <div class="carousel-item active">
           <img src="./images/banner-2.jpg" class="d-block w-100 carousel-images" alt="First slide">
           <div class="carousel-caption d-none d-md-block boxx">
-            <h5 class=" unique-font ">Welcome to Zephyr Events </h5>
-            <p>We specialize in creating unforgettable experiences tailored to your needs.</p>
+            <h5 class=" unique-font ">Blooming Elegance</h5>
+            <p>Immerse yourself in a world where every detail blossoms with sophistication.</p>
           </div>
         </div>
         <!-- Second Slide -->
         <div class="carousel-item">
           <img src="./images/banner-3.jpg" class="d-block w-100 carousel-images" alt="Second slide">
           <div class="carousel-caption d-none d-md-block boxx">
-            <h5 class="unique-font">Exceptional Services</h5>
-            <p>From corporate events to personal celebrations, we offer top-notch service for every occasion.</p>
+            <h5 class="unique-font">Luxurious Dining Redefined</h5>
+            <p>Experience dining like never before, with arrangements that spell opulence and style.</p>
           </div>
         </div>
         <!-- Third Slide -->
         <div class="carousel-item">
           <img src="./images/banner-11.jpg" class="d-block w-100 carousel-images" alt="Third slide">
           <div class="carousel-caption d-none d-md-block boxx">
-            <h5 class="unique-font">Experience the Difference</h5>
-            <p>Our team ensures every detail is perfect, so you can enjoy a seamless event.</p>
+            <h5 class="unique-font">Radiant Moments</h5>
+            <p>Capture the beauty of love with floral splendor that shines as bright as your special day</p>
           </div>
         </div>
         <!-- Fourth Slide -->
         <div class="carousel-item">
           <img src="./images/banner-4.jpg" class="d-block w-100 carousel-images" alt="Fourth slide">
           <div class="carousel-caption d-none d-md-block boxx">
-            <h5 class="unique-font">Innovative Ideas</h5>
-            <p>We bring fresh and creative ideas to make your event stand out.</p>
+            <h5 class="unique-font">Floral Fantasy</h5>
+            <p>Step into a dreamscape of flowers, creating unforgettable settings that dazzle and delight.</p>
           </div>
         </div>
         <!-- Fifth Slide -->
         <div class="carousel-item">
           <img src="./images/banner-88.jpg" class="d-block w-100 carousel-images" alt="Fifth slide">
           <div class="carousel-caption d-none d-md-block boxx">
-            <h5 class="unique-font">Your Vision, Our Expertise</h5>
-            <p>Work with us to bring your vision to life with our expert planning and execution.</p>
+            <h5 class="unique-font">Embracing Joy</h5>
+            <p>Celebrate with heartwarming moments that radiate happiness and elegance.</p>
           </div>
         </div>
         <!-- Additional Slides -->
         <div class="carousel-item">
           <img src="./images/banner-7.jpg" class="d-block w-100 carousel-images" alt="Sixth slide">
           <div class="carousel-caption d-none d-md-block boxx">
-            <h5 class="unique-font">Inspiration Meets Expertise</h5>
-<p>Let us turn your ideas into extraordinary events with our creative approach and meticulous attention to detail.</p>
+            <h5 class="unique-font">Exquisite Celebrations</h5>
+            <p>Transform your gatherings into unforgettable experiences with our touch of luxury and class</p>
 
           </div>
         </div>
@@ -180,8 +139,9 @@
     </div>
 
     <!-- Banner Section -->
-    <div class="bg-gray-100 py-12 px-6 text-center custom-banner-shadow">
-      <h3 class="text-xl font-semibold text-gray-800 mb-1">Welcome to Zephyr Events, where dreams soar and unforgettable moments are crafted with care.</h3>
+    <div class="bg-gray-100 py-12 px-6 text-center custom-banner-shadow ">
+      <h2 class="text-2xl font-semibold text-gray-800 mt-2 mb-1">Welcome to Zephyr Events, where dreams soar and
+        unforgettable moments are crafted with care.</h2>
       <div class="mx-auto max-w-3xl">
         <p class="text-sm text-gray-600 px-3 custom-paragraph mb-4 ">
           Based in Kochi, Zephyr Events designs and executes special occasions shaped to meet the client's style and
@@ -197,8 +157,16 @@
       </div>
     </div>
 
-    
-    
+
+
+
+
+
+
+
+
+
+
     <!-- Services Section -->
     <section id="what-we-do" class="py-8 mt-6 bg-white">
       <div class="container mx-auto px-6">
@@ -207,416 +175,500 @@
           <!-- Service 1 -->
           <div class="service-card">
             <div class="image-container">
-              <img src="/images/Asset-2.png" alt="Corporate Events">
+              <img src="./images/Asset-2.png" alt="Corporate Events">
             </div>
             <h3>Corporate Events</h3>
           </div>
           <!-- Service 2 -->
           <div class="service-card">
             <div class="image-container">
-              <img src="/images/Asset-3.png" alt="Conferences">
+              <img src="./images/Asset-3.png" alt="Conferences">
             </div>
             <h3>Conferences</h3>
           </div>
           <!-- Service 3 -->
           <div class="service-card">
             <div class="image-container">
-              <img src="/images/Asset-4.png" alt="Public Events">
+              <img src="./images/Asset-4.png" alt="Public Events">
             </div>
             <h3>Public Events</h3>
           </div>
           <!-- Service 4 -->
           <div class="service-card">
             <div class="image-container">
-              <img src="/images/Asset-5.png" alt="Event Marketing">
+              <img src="./images/Asset-5.png" alt="Event Marketing">
             </div>
             <h3>Event Marketing</h3>
           </div>
           <!-- Service 5 -->
           <div class="service-card">
             <div class="image-container">
-              <img src="/images/Asset-6.png" alt="Product Launches">
+              <img src="./images/Asset-6.png" alt="Product Launches">
             </div>
             <h3>Product Launches</h3>
           </div>
           <!-- Service 6 -->
           <div class="service-card">
             <div class="image-container">
-              <img src="/images/Asset-7.png" alt="Award Ceremonies">
+              <img src="./images/Asset-7.png" alt="Award Ceremonies">
             </div>
             <h3>Award Ceremonies</h3>
           </div>
           <!-- Service 7 -->
           <div class="service-card">
             <div class="image-container">
-              <img src="/images/Asset-8.png" alt="Weddings">
+              <img src="./images/Asset-8.png" alt="Weddings">
             </div>
             <h3>Weddings</h3>
           </div>
           <!-- Service 8 -->
           <div class="service-card">
             <div class="image-container">
-              <img src="/images/Asset-9.png" alt="Entertainment">
+              <img src="./images/Asset-9.png" alt="Entertainment">
             </div>
             <h3>Entertainment</h3>
           </div>
           <!-- Service 9 -->
           <div class="service-card">
             <div class="image-container">
-              <img src="/images/Asset-10.png" alt="Virtual Events">
+              <img src="./images/Asset-10.png" alt="Virtual Events">
             </div>
             <h3>Virtual Events</h3>
           </div>
           <!-- Service 10 -->
           <div class="service-card">
             <div class="image-container">
-              <img src="/images/Asset-11.png" alt="Social Events">
+              <img src="./images/Asset-11.png" alt="Social Events">
             </div>
             <h3>Social Events</h3>
           </div>
         </div>
-       
+
       </div>
       <div class="flex justify-center">
         <a href="#"
-           class="inline-block px-3 py-3 mt-5 rounded-lg text-sm font-semibold transition duration-300 no-underline bttn-2">
-           View More
+          class="inline-block px-3 py-3 mt-5 rounded-lg text-sm font-semibold transition duration-300 no-underline bttn-2">
+          View More
         </a>
-    </div>
-
-
-
-
-    <!-- Upcoming Events -->
-
-    <section class="container py-6 upcoming ">
-      <h2 class="text-3xl font-bold text-gray-800 text-center mb-6 mt-8 service-head bordr-head ">Upcoming Events</h1>
-      <div id="events-carousel-2" class=" carousel slide relative overflow-hidden mb-12" data-bs-ride="carousel" data-bs-interval="4500">
-        <div class="carousel-inner  bg-white">
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="flex justify-center space-x-4">
-              <!-- Card 1 -->
-              <div class="card flex-shrink-0 w-1/3 p-2 bg-white border rounded-lg  text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
-                <img width="100%" height="300px" src="./images/slide-21.jpg" alt="Wedding" class="object-cover mb-2">
-                <h2 class="text-xl font-semibold mb-2">Wedding</h2>
-                <button class="border-2 border-white text-white  py-1 px-4 rounded ">
-                  More info
-                </button>           
-                </div>
-              <!-- Card 2 -->
-              <div class="card flex-shrink-0 w-1/3 p-2 bg-white border rounded-lg  text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
-                <img width="100%" height="300px" src="./images/slide-22.jpg" alt="Birthday" class="object-cover mb-2">
-                <h2 class="text-xl font-semibold  mb-2">Birthday</h2>
-                <button class="border-2 border-white text-white  py-1 px-4 rounded ">More info</button>
-              </div>
-              <!-- Card 3 -->
-              <div class="card flex-shrink-0 w-1/3 p-2 bg-white border rounded-lg text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
-                <img width="100%" height="300px" src="./images/slide-23.jpg" alt="Celebrity Concert" class="object-cover mb-2">
-                <h2 class="text-xl font-semibold mb-2">Celebrity Concert</h2>
-                <button class="border-2 border-white text-white  py-1 px-4 rounded ">More info</button>              </div>
-            </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="flex justify-center space-x-4">
-              <!-- Card 4 -->
-              <div class="card flex-shrink-0 w-1/3 p-2 bg-white border rounded-lg  text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
-                <img width="100%" height="300px" src="./images/slide-24.jpg" alt="Social Gatherings" class="object-cover mb-2">
-                <h2 class="text-xl font-semibold mb-2">Social Gatherings</h2>
-                <button class="border-2 border-white text-white  py-1 px-4 rounded ">More info</button>              </div>
-              <!-- Card 5 -->
-              <div class="card flex-shrink-0 w-1/3 p-2 bg-white border rounded-lg  text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
-                <img width="100%" height="300px" src="./images/slide-25.jpg" alt="Corporate Events" class="object-cover mb-2">
-                <h2 class="text-xl font-semibold mb-2">Corporate Events</h2>
-                <button class="border-2 border-white text-white  py-1 px-4 rounded ">More info</button>              </div>
-              <!-- Card 6 -->
-              <div class="card flex-shrink-0 w-1/3 p-2 bg-white border rounded-lg  text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
-                <img width="100%" height="300px" src="./images/slide-26.jpg" alt="Photoshoot" class="object-cover mb-2">
-                <h2 class="text-xl font-semibold mb-2">Photoshoot</h2>
-                <button class="border-2 border-white text-white  py-1 px-4 rounded ">More info</button>              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full" type="button" data-bs-target="#events-carousel-2" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full" type="button" data-bs-target="#events-carousel-2" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </section>
-    
-    
-  
-
-<!--   Event Management Services -->
 
 
-    <div class="container mx-auto pb-6">
-      <h2 class="text-3xl font-bold text-gray-800 text-center mb-6 service-head bordr-head ">Event Management Services</h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- Card 1 -->
-          <div class="flex flex-col items-center bg-white rounded-lg p-6 text-center h-full">
+
+
+      <!-- Upcoming Events -->
+
+      <section class="container py-6 upcoming ">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-6 mt-8 service-head bordr-head ">Upcoming Events</h1>
+          <div id="events-carousel-2" class=" carousel slide relative overflow-hidden mb-12" data-bs-ride="carousel"
+            data-bs-interval="4500">
+            <div class="carousel-inner  bg-white">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="flex justify-center space-x-4">
+                  <!-- Card 1 -->
+                  <div
+                    class="card flex-shrink-0 w-1/3 p-2 bg-white border rounded-lg  text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                    <img width="100%" height="300px" src="./images/slide-21.jpg" alt="Wedding"
+                      class="object-cover mb-2">
+                    <h2 class="text-xl font-semibold mb-2">Wedding</h2>
+                    <button class="border-2 border-white text-white  py-1 px-4 rounded ">
+                      More info
+                    </button>
+                  </div>
+                  <!-- Card 2 -->
+                  <div
+                    class="card flex-shrink-0 w-1/3 p-2 bg-white border rounded-lg  text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                    <img width="100%" height="300px" src="./images/slide-22.jpg" alt="Birthday"
+                      class="object-cover mb-2">
+                    <h2 class="text-xl font-semibold  mb-2">Birthday</h2>
+                    <button class="border-2 border-white text-white  py-1 px-4 rounded ">More info</button>
+                  </div>
+                  <!-- Card 3 -->
+                  <div
+                    class="card flex-shrink-0 w-1/3 p-2 bg-white border rounded-lg text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                    <img width="100%" height="300px" src="./images/slide-23.jpg" alt="Celebrity Concert"
+                      class="object-cover mb-2">
+                    <h2 class="text-xl font-semibold mb-2">Celebrity Concert</h2>
+                    <button class="border-2 border-white text-white  py-1 px-4 rounded ">More info</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="flex justify-center space-x-4">
+                  <!-- Card 4 -->
+                  <div
+                    class="card flex-shrink-0 w-1/3 p-2 bg-white border rounded-lg  text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                    <img width="100%" height="300px" src="./images/slide-24.jpg" alt="Social Gatherings"
+                      class="object-cover mb-2">
+                    <h2 class="text-xl font-semibold mb-2">Social Gatherings</h2>
+                    <button class="border-2 border-white text-white  py-1 px-4 rounded ">More info</button>
+                  </div>
+                  <!-- Card 5 -->
+                  <div
+                    class="card flex-shrink-0 w-1/3 p-2 bg-white border rounded-lg  text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                    <img width="100%" height="300px" src="./images/slide-25.jpg" alt="Corporate Events"
+                      class="object-cover mb-2">
+                    <h2 class="text-xl font-semibold mb-2">Corporate Events</h2>
+                    <button class="border-2 border-white text-white  py-1 px-4 rounded ">More info</button>
+                  </div>
+                  <!-- Card 6 -->
+                  <div
+                    class="card flex-shrink-0 w-1/3 p-2 bg-white border rounded-lg  text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+                    <img width="100%" height="300px" src="./images/slide-26.jpg" alt="Photoshoot"
+                      class="object-cover mb-2">
+                    <h2 class="text-xl font-semibold mb-2">Photoshoot</h2>
+                    <button class="border-2 border-white text-white  py-1 px-4 rounded ">More info</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button
+              class="carousel-control-prev absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full"
+              type="button" data-bs-target="#events-carousel-2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full"
+              type="button" data-bs-target="#events-carousel-2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+
+
+
+
+      <!--   Event Management Services -->
+
+
+      <div class="container mx-auto pb-6">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-6 service-head bordr-head ">Event Management Services
+          </h1>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <div class="flex flex-col items-center bg-white rounded-lg p-6 text-center h-full">
               <img width="80" height="80" src="./icons/corporate.png" alt="" class="mb-4">
               <h3 class="text-xl font-semibold mb-2 ">Corporate Event Management</h3>
-              <p class="text-gray-600 " >Zephyr Events can be your one-stop event management provider for corporate events. We offer comprehensive corporate event management and creative services, tailor-made precisely according to your needs.</p>
-          </div>
-          <!-- Card 2 -->
-          <div class="flex flex-col items-center bg-white  rounded-lg p-6 text-center h-full">
+              <p class="text-gray-600 ">Zephyr Events can be your one-stop event management provider for corporate
+                events. We offer comprehensive corporate event management and creative services, tailor-made precisely
+                according to your needs.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="flex flex-col items-center bg-white  rounded-lg p-6 text-center h-full">
               <img width="80" height="80" src="./icons/seminar.png" alt="" class="mb-4">
               <h3 class="text-xl font-semibold mb-2">Seminars and Conferences</h3>
-              <p class="text-gray-600">We are one of the best event management companies for organising seminars and conferences. We are committed to serving the varied needs of the businesses and delivering the best outcomes meeting their expectations.</p>
-          </div>
-          <!-- Card 3 -->
-          <div class="flex flex-col items-center bg-white rounded-lg p-6 text-center h-full">
+              <p class="text-gray-600">We are one of the best event management companies for organising seminars and
+                conferences. We are committed to serving the varied needs of the businesses and delivering the best
+                outcomes meeting their expectations.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="flex flex-col items-center bg-white rounded-lg p-6 text-center h-full">
               <img width="80" height="80" src="./icons/brand.png" alt="" class="mb-4">
               <h3 class="text-xl font-semibold mb-2">Brand Promotion</h3>
-              <p class="text-gray-600 ">Seeking a smart event management company for your brand promotion related needs? Zephyr Events is the perfect choice to fulfil such requirements efficiently. We have experienced professionals to deliver such services.</p>
-          </div>
-          <!-- Card 4 -->
-          <div class="flex flex-col items-center bg-white  rounded-lg p-6 text-center h-full">
+              <p class="text-gray-600 ">Seeking a smart event management company for your brand promotion related needs?
+                Zephyr Events is the perfect choice to fulfil such requirements efficiently. We have experienced
+                professionals to deliver such services.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="flex flex-col items-center bg-white  rounded-lg p-6 text-center h-full">
               <img width="80" height="80" src="./icons/meeting.png" alt="" class="mb-4">
               <h3 class="text-xl font-semibold mb-2">MICE</h3>
-              <p class="text-gray-600">Zephyr Events is one of the most sought after event management companies for organising Meetings, Incentives, Conferences & Exhibitions (MICE) in Delhi NCR. Connect with us now for impeccable MICE management services.</p>
-          </div>
-          <!-- Card 5 -->
-          <div class="flex flex-col items-center bg-white  rounded-lg p-6 text-center h-full">
+              <p class="text-gray-600">Zephyr Events is one of the most sought after event management companies for
+                organising Meetings, Incentives, Conferences & Exhibitions (MICE) in Delhi NCR. Connect with us now for
+                impeccable MICE management services.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="flex flex-col items-center bg-white  rounded-lg p-6 text-center h-full">
               <img width="80" height="80" src="./icons/management.png" alt="" class="mb-4">
               <h3 class="text-xl font-semibold mb-2">Exhibition Management</h3>
-              <p class="text-gray-600">Make your exhibitions appealing and highly engaging platforms for your target audience with Zephyr Events. Let us boost your business in a smart and efficient manner with our expertise.</p>
-          </div>
-          <!-- Card 6 -->
-          <div class="flex flex-col items-center bg-white  rounded-lg p-6 text-center h-full">
+              <p class="text-gray-600">Make your exhibitions appealing and highly engaging platforms for your target
+                audience with Zephyr Events. Let us boost your business in a smart and efficient manner with our
+                expertise.</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="flex flex-col items-center bg-white  rounded-lg p-6 text-center h-full">
               <img width="80" height="80" src="./icons/artist.png" alt="" class="mb-4">
               <h3 class="text-xl font-semibold mb-2">Bollywood Artists</h3>
-              <p class="text-gray-600">Zephyr Events is a well-reputed event management company for planning events involving Bollywood artists. We have numerous celebrities with us ready for collaboration for private events.</p>
-          </div>
-          <!-- Card 7 -->
-          <div class="flex flex-col items-center bg-white  rounded-lg p-6 text-center h-full">
+              <p class="text-gray-600">Zephyr Events is a well-reputed event management company for planning events
+                involving Bollywood artists. We have numerous celebrities with us ready for collaboration for private
+                events.</p>
+            </div>
+            <!-- Card 7 -->
+            <div class="flex flex-col items-center bg-white  rounded-lg p-6 text-center h-full">
               <img width="80" height="80" src="./icons/feshion.png" alt="" class="mb-4">
               <h3 class="text-xl font-semibold mb-2">Fashion Shows</h3>
-              <p class="text-gray-600">We have an incredible team of experienced and young talent who can glam up fashion shows beyond expectations. Connect with us now if you are looking for the best professionals for organising fashion shows.</p>
-          </div>
-          <!-- Card 8 -->
-          <div class="flex flex-col items-center bg-white  rounded-lg p-6 text-center h-full">
+              <p class="text-gray-600">We have an incredible team of experienced and young talent who can glam up
+                fashion shows beyond expectations. Connect with us now if you are looking for the best professionals for
+                organising fashion shows.</p>
+            </div>
+            <!-- Card 8 -->
+            <div class="flex flex-col items-center bg-white  rounded-lg p-6 text-center h-full">
               <img width="80" height="80" src="./icons/vir.png" alt="" class="mb-4">
               <h3 class="text-xl font-semibold mb-2">Virtual Shows</h3>
-              <p class="text-gray-600">Make your business unaffected by the global challenges and geographical boundaries. Promote your products and/or services worldwide conveniently with our professional assistance in organising virtual events.</p>
+              <p class="text-gray-600">Make your business unaffected by the global challenges and geographical
+                boundaries. Promote your products and/or services worldwide conveniently with our professional
+                assistance in organising virtual events.</p>
+            </div>
           </div>
       </div>
-  </div>
-  
 
 
-  <!-- Main container with padding and shadow -->
-  <div class="container mx-auto py-8  shadow-lg rounded-lg">
-    <div class="row">
-     
-        <!-- Carousel Section -->
-        <div class="col-md-6">
+      <!-- Main container with padding and shadow -->
+      <div class="container mx-auto py-8 px-4 shadow-lg rounded-md">
+        <div class="row">
+
+          <!-- Carousel Section -->
+          <div class="col-md-12 col-lg-6">
             <!-- Bootstrap carousel component -->
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <!-- Carousel indicators (navigation dots) -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <!-- Carousel indicators (navigation dots) -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <!-- Carousel inner container with images -->
+              <div class="carousel-inner">
+                <!-- First carousel item (active slide) -->
+                <div class="carousel-item active">
+                  <img src="./images/album-1.jpg" class="d-block w-100 h-auto object-cover" alt="Wedding Event">
                 </div>
-                <!-- Carousel inner container with images -->
-                <div class="carousel-inner rounded-lg px-3">
-                    <!-- First carousel item (active slide) -->
-                    <div class="carousel-item active">
-                        <img src="http://www.grandweddings.co.in/wp-content/uploads/2020/01/Wedding-Event.jpg" class="d-block w-100 h-96 object-cover" alt="Wedding Event">
-                    </div>
-                    <!-- Second carousel item -->
-                    <div class="carousel-item">
-                        <img src="https://apis.xogrp.com/media-api/images/e3ffa0b1-4d56-11e7-b589-12072ec58d1a" class="d-block w-100 h-96 object-cover" alt="Event Highlight">
-                    </div>
-                    <!-- Third carousel item -->
-                    <div class="carousel-item">
-                        <img src="https://www.weddingsutra.com/images/wedding-images/entertaining/muslim-wedding/muslim-wedding-10.webp" class="d-block w-100 h-96 object-cover" alt="Wedding Celebration">
-                    </div>
+                <!-- Second carousel item -->
+                <div class="carousel-item">
+                  <img src="./images/album-2.jpg" class="d-block w-100 h-auto object-cover" alt="Event Highlight">
                 </div>
+                <!-- Third carousel item -->
+                <div class="carousel-item">
+                  <img src="./images/album-3.jpg" class="d-block w-100 h-auto object-cover" alt="Wedding Celebration">
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
 
-        <!-- About Us Section -->
-        <div id="about-us" class="col-md-6 d-flex flex-column justify-between h-96">
+          <!-- About Us Section -->
+          <div id="about-us" class="col-md-12 col-lg-6 d-flex flex-column justify-between">
             <div>
-              <h2 class="text-3xl font-bold text-gray-800 text-center mb-6 service-head bordr-head">About Us</h2>
+              <h2 class="text-3xl mb-4 font-bold text-gray-800 text-center mb-6 bordr-head">About Us</h2>
               <!-- Description of Zephyr Event Management -->
-                <p class="text-gray-700 mb-4">Zephyr is a premier event management service dedicated to creating unforgettable experiences with effortless elegance. From intimate gatherings to grand celebrations, we offer tailored solutions that seamlessly blend creativity and precision. With a keen eye for detail and a passion for excellence, we ensure every event is orchestrated to perfection, leaving a lasting impression on you and your guests.</p>
-                <p class="text-gray-700 mb-4">Zephyr Event Management is your gateway to a flawlessly executed event experience. Whether you’re planning a corporate function, a wedding, a milestone celebration, or an intimate gathering, our comprehensive booking process ensures every detail is meticulously handled to bring your vision to life.</p>
+              <p class="text-gray-700 pt-2 mb-2">Zephyr is a premier event management service dedicated to creating
+                unforgettable experiences with effortless elegance. From intimate gatherings to grand celebrations, we
+                offer tailored solutions that seamlessly blend creativity and precision. With a keen eye for detail and
+                a passion for excellence, we ensure every event is orchestrated to perfection, leaving a lasting
+                impression on you and your guests.</p>
+              <p class="text-gray-700 mb-2">Zephyr Event Management is your gateway to a flawlessly executed event
+                experience. Whether you’re planning a corporate function, a wedding, a milestone celebration, or an
+                intimate gathering, our comprehensive booking process ensures every detail is meticulously handled to
+                bring your vision to life.</p>
             </div>
-            <div>
-                <!-- Button to know more about the service -->
-                <button class="py-2 px-4 rounded bttn-2">Know more</button>
+            <div class="mt-2">
+              <!-- Button to know more about the service -->
+              <button
+                class="inline-block px-6 py-3 rounded-lg text-sm font-semibold transition duration-300 no-underline bttn-2">Know
+                more</button>
             </div>
+          </div>
         </div>
-    </div>
-  </div>
+      </div>
 
-  <!-- Gallery Section -->
-  <section id="gallery" class="py-8 mt-6 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-gray-800 text-center mb-6 service-head bordr-head">Gallery</h2>
-      <div class="relative">
-          <!-- Gallery grid with responsive columns -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="py-8 mt-6 bg-gray-100">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-gray-800 text-center mb-6 service-head bordr-head">Gallery</h2>
+          <div class="relative">
+            <!-- Gallery grid with responsive columns -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               <!-- Individual gallery item -->
               <div class="relative overflow-hidden rounded-lg shadow-lg group gallery-imgs">
-                  <img src="images/highlight-1.jpg" alt="Highlight 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-                  <!-- Overlay on hover -->
-                  <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
-                      <span class="text-white text-lg font-semibold">View More</span>
-                  </div>
+                <img src="images/highlight-1.jpg" alt="Highlight 1"
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                <!-- Overlay on hover -->
+                <div
+                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white text-lg font-semibold">View More</span>
+                </div>
               </div>
               <!-- Second gallery item -->
               <div class="relative overflow-hidden rounded-lg shadow-lg group gallery-imgs">
-                  <img src="images/highlight-2.jpg" alt="Highlight 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-                  <!-- Overlay on hover -->
-                  <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
-                      <span class="text-white text-lg font-semibold">View More</span>
-                  </div>
+                <img src="images/highlight-2.jpg" alt="Highlight 2"
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                <!-- Overlay on hover -->
+                <div
+                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white text-lg font-semibold">View More</span>
+                </div>
               </div>
               <!-- Third gallery item -->
               <div class="relative overflow-hidden rounded-lg shadow-lg group gallery-imgs">
-                  <img src="images/highlight-3.jpg" alt="Highlight 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-                  <!-- Overlay on hover -->
-                  <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
-                      <span class="text-white text-lg font-semibold">View More</span>
-                  </div>
+                <img src="images/highlight-3.jpg" alt="Highlight 3"
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                <!-- Overlay on hover -->
+                <div
+                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white text-lg font-semibold">View More</span>
+                </div>
               </div>
               <!-- Fourth gallery item -->
               <div class="relative overflow-hidden rounded-lg shadow-lg group gallery-imgs">
-                  <img src="images/highlight-4.jpg" alt="Highlight 4" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-                  <!-- Overlay on hover -->
-                  <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
-                      <span class="text-white text-lg font-semibold">View More</span>
-                  </div>
+                <img src="images/highlight-4.jpg" alt="Highlight 4"
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                <!-- Overlay on hover -->
+                <div
+                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white text-lg font-semibold">View More</span>
+                </div>
               </div>
 
               <!-- Additional gallery items for the second row -->
               <div class="relative overflow-hidden rounded-lg shadow-lg group gallery-imgs">
-                  <img src="images/highlight-5.jpg" alt="Highlight 5" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-                  <!-- Overlay on hover -->
-                  <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
-                      <span class="text-white text-lg font-semibold">View More</span>
-                  </div>
+                <img src="images/highlight-5.jpg" alt="Highlight 5"
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                <!-- Overlay on hover -->
+                <div
+                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white text-lg font-semibold">View More</span>
+                </div>
               </div>
               <div class="relative overflow-hidden rounded-lg shadow-lg group gallery-imgs">
-                  <img src="images/highlight-6.jpg" alt="Highlight 6" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-                  <!-- Overlay on hover -->
-                  <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
-                      <span class="text-white text-lg font-semibold">View More</span>
-                  </div>
+                <img src="images/highlight-6.jpg" alt="Highlight 6"
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                <!-- Overlay on hover -->
+                <div
+                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white text-lg font-semibold">View More</span>
+                </div>
               </div>
               <div class="relative overflow-hidden rounded-lg shadow-lg group gallery-imgs">
-                  <img src="images/highlight-8.jpeg" alt="Highlight 7" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-                  <!-- Overlay on hover -->
-                  <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
-                      <span class="text-white text-lg font-semibold">View More</span>
-                  </div>
+                <img src="images/highlight-8.jpeg" alt="Highlight 7"
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                <!-- Overlay on hover -->
+                <div
+                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white text-lg font-semibold">View More</span>
+                </div>
               </div>
               <div class="relative overflow-hidden rounded-lg shadow-lg group gallery-imgs last-gall">
-                  <img src="images/highlight-7.jpg" alt="Highlight 8" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-                  <!-- Overlay on hover -->
-                  <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
-                      <span class="text-white text-lg font-semibold">View More</span>
-                  </div>
-                  <!-- "+24 More" Overlay for the last gallery item -->
-                  <div class="absolute inset-0 flex items-center justify-center rounded-lg overflow-hidden">
-                      <span class="text-white text-xl font-bold">+24 More</span>
-                  </div>
+                <img src="images/highlight-7.jpg" alt="Highlight 8"
+                  class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+                <!-- Overlay on hover -->
+                <div
+                  class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 flex items-center justify-center">
+                  <span class="text-white text-lg font-semibold">View More</span>
+                </div>
+                <!-- "+24 More" Overlay for the last gallery item -->
+                <div class="absolute inset-0 flex items-center justify-center rounded-lg overflow-hidden">
+                  <span class="text-white text-xl font-bold">+24 More</span>
+                </div>
               </div>
-          </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Booking Process Section -->
-  <section id="booking-process" class="booking-process py-12">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-gray-800 text-center mb-6 service-head bordr-head">Booking Process</h2>
-      <div class="steps">
-        <!-- Row for steps in the booking process -->
-        <div class="steps-row">
-          <!-- Step 1 -->
-          <div class="step border p-4 rounded-lg">
-            <i class="fas fa-calendar-day"></i>
-            <div class="step-content">
-              <h3 class="text-xl font-semibold mb-2">1. Schedule a Consultation</h3>
-              <p class="text-gray-600">Schedule a consultation with one of our experienced event planners. During this session, we’ll discuss the event’s theme, size, location, budget, and any special requests.</p>
-            </div>
-          </div>
-          <!-- Step 2 -->
-          <div class="step border p-4 rounded-lg">
-            <i class="fas fa-pencil-alt"></i>
-            <div class="step-content">
-              <h3 class="text-xl font-semibold mb-2">2. Design the Proposal</h3>
-              <p class="text-gray-600">We design the event plan, including venue options, vendor recommendations, and a preliminary budget. This proposal will be customized to align with your vision and expectations.</p>
-            </div>
-          </div>
-          <!-- Step 3 -->
-          <div class="step border p-4 rounded-lg">
-            <i class="fas fa-file-signature"></i>
-            <div class="step-content">
-              <h3 class="text-xl font-semibold mb-2">3. Formal Agreement</h3>
-              <p class="text-gray-600">Once you approve the proposal, a formal agreement will be drafted. This agreement will include all terms, conditions, and a payment schedule. A deposit will be required to confirm your booking and secure your event date.</p>
             </div>
           </div>
         </div>
-        <!-- Second row for additional steps -->
-        <div class="steps-row">
-          <!-- Step 4 -->
-          <div class="step border p-4 rounded-lg">
-            <i class="fas fa-cogs"></i>
-            <div class="step-content">
-              <h3 class="text-xl font-semibold mb-2">4. Refine the Details</h3>
-              <p class="text-gray-600">Our team will work closely with you to refine the event details, including décor, catering, entertainment, and logistics. We’ll also coordinate with vendors, manage timelines, and ensure all aspects of the event are in sync.</p>
+      </section>
+
+      <!-- Booking Process Section -->
+      <section id="booking-process" class="booking-process py-12">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-gray-800 text-center mb-6 service-head bordr-head">Booking Process</h2>
+          <div class="steps">
+            <!-- Row for steps in the booking process -->
+            <div class="steps-row">
+              <!-- Step 1 -->
+              <div class="step border p-4 rounded-lg">
+                <i class="fas fa-calendar-day"></i>
+                <div class="step-content">
+                  <h3 class="text-xl font-semibold mb-2">1. Schedule a Consultation</h3>
+                  <p class="text-gray-600">Schedule a consultation with one of our experienced event planners. During
+                    this session, we’ll discuss the event’s theme, size, location, budget, and any special requests.</p>
+                </div>
+              </div>
+              <!-- Step 2 -->
+              <div class="step border p-4 rounded-lg">
+                <i class="fas fa-pencil-alt"></i>
+                <div class="step-content">
+                  <h3 class="text-xl font-semibold mb-2">2. Design the Proposal</h3>
+                  <p class="text-gray-600">We design the event plan, including venue options, vendor recommendations,
+                    and a preliminary budget. This proposal will be customized to align with your vision and
+                    expectations.</p>
+                </div>
+              </div>
+              <!-- Step 3 -->
+              <div class="step border p-4 rounded-lg">
+                <i class="fas fa-file-signature"></i>
+                <div class="step-content">
+                  <h3 class="text-xl font-semibold mb-2">3. Formal Agreement</h3>
+                  <p class="text-gray-600">Once you approve the proposal, a formal agreement will be drafted. This
+                    agreement will include all terms, conditions, and a payment schedule. A deposit will be required to
+                    confirm your booking and secure your event date.</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <!-- Step 5 -->
-          <div class="step border p-4 rounded-lg">
-            <i class="fas fa-calendar-check"></i>
-            <div class="step-content">
-              <h3 class="text-xl font-semibold mb-2">5. Event Day</h3>
-              <p class="text-gray-600">On the day of the event, our team will be on-site to oversee setup, manage the schedule, and address any issues that may arise. We’ll ensure that everything runs smoothly, allowing you to enjoy the event stress-free.</p>
-            </div>
-          </div>
-          <!-- Step 6 -->
-          <div class="step border p-4 rounded-lg">
-            <i class="fas fa-comments"></i>
-            <div class="step-content">
-              <h3 class="text-xl font-semibold mb-2">6. Debrief</h3>
-              <p class="text-gray-600">After the event, we’ll conduct a debrief to review the success of the event and gather feedback from you. This helps us to continuously improve our services and ensure we meet your expectations.</p>
+            <!-- Second row for additional steps -->
+            <div class="steps-row">
+              <!-- Step 4 -->
+              <div class="step border p-4 rounded-lg">
+                <i class="fas fa-cogs"></i>
+                <div class="step-content">
+                  <h3 class="text-xl font-semibold mb-2">4. Refine the Details</h3>
+                  <p class="text-gray-600">Our team will work closely with you to refine the event details, including
+                    décor, catering, entertainment, and logistics. We’ll also coordinate with vendors, manage timelines,
+                    and ensure all aspects of the event are in sync.</p>
+                </div>
+              </div>
+              <!-- Step 5 -->
+              <div class="step border p-4 rounded-lg">
+                <i class="fas fa-calendar-check"></i>
+                <div class="step-content">
+                  <h3 class="text-xl font-semibold mb-2">5. Event Day</h3>
+                  <p class="text-gray-600">On the day of the event, our team will be on-site to oversee setup, manage
+                    the schedule, and address any issues that may arise. We’ll ensure that everything runs smoothly,
+                    allowing you to enjoy the event stress-free.</p>
+                </div>
+              </div>
+              <!-- Step 6 -->
+              <div class="step border p-4 rounded-lg">
+                <i class="fas fa-comments"></i>
+                <div class="step-content">
+                  <h3 class="text-xl font-semibold mb-2">6. Debrief</h3>
+                  <p class="text-gray-600">After the event, we’ll conduct a debrief to review the success of the event
+                    and gather feedback from you. This helps us to continuously improve our services and ensure we meet
+                    your expectations.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Why Choose Zephyr Section -->
-  <section id="why-choose-zephyr" class="py-12">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-gray-800 text-center mb-6 service-head ">Why Choose Zephyr</h2>
-      <!-- Description of why to choose Zephyr Event Management -->
-      <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto leading-relaxed">
-        Our team of skilled event planners brings years of experience and creativity to every event. We offer bespoke solutions tailored to your unique vision and requirements. From initial planning to final execution, we handle every detail with precision and care. Our comprehensive management ensures that you can enjoy your event without worrying about the logistics.
-        <br><br>
-        To start planning your next event with Zephyr, reach out to us through our website or give us a call to schedule your initial consultation. Let us turn your event dreams into reality with style and sophistication.
-      </p>
-    </div>
-  </section>
+      <!-- Why Choose Zephyr Section -->
+      <section id="why-choose-zephyr" class="py-12">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-gray-800 text-center mb-6 service-head ">Why Choose Zephyr</h2>
+          <!-- Description of why to choose Zephyr Event Management -->
+          <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto leading-relaxed">
+            Our team of skilled event planners brings years of experience and creativity to every event. We offer
+            bespoke solutions tailored to your unique vision and requirements. From initial planning to final execution,
+            we handle every detail with precision and care. Our comprehensive management ensures that you can enjoy your
+            event without worrying about the logistics.
+            <br><br>
+            To start planning your next event with Zephyr, reach out to us through our website or give us a call to
+            schedule your initial consultation. Let us turn your event dreams into reality with style and
+            sophistication.
+          </p>
+        </div>
+      </section>
 
-  <!-- Include necessary JavaScript files -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- Include necessary JavaScript files -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
