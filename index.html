@@ -56,17 +56,66 @@
         <a href="#what-we-do" class="navbar-link text-sm font-semibold leading-6">What we do</a>
         <a href="#booking-process" class="navbar-link text-sm font-semibold leading-6">Booking</a>
         <a href="#gallery" class="navbar-link text-sm font-semibold leading-6">Gallery</a>
-        <a href="contact.html" class="navbar-link text-sm font-semibold leading-6">Reach Us</a>
+        <a href="#contact-us" class="navbar-link text-sm font-semibold leading-6">Reach Us</a>
       </div>
 
-      <!-- Login Button -->
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#"
-          class="text-sm font-semibold leading-6 text-white px-4 py-2 rounded-lg no-underline transition duration-300 bttn">
-          Sign Up
-        </a>
-      </div>
+     <!-- Login Button -->
+<div class="hidden lg:flex lg:flex-1 lg:justify-end">
+  <a href="#"
+     id="openLogin"
+     class="text-sm font-semibold leading-6 text-white px-4 py-2 rounded-lg no-underline transition duration-300 bttn bg-blue-600 hover:bg-blue-500">
+     Sign Up
+  </a>
+</div>
+
     </nav>
+
+    <!-- Login Popup -->
+<!-- Auth Popup -->
+<div id="authModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm hidden z-50">
+  <div class="relative bg-white text-gray-800 rounded-lg p-8 w-full max-w-sm shadow-lg">
+    <button id="closeAuth" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-xl">✕</button>
+
+    <!-- LOGIN -->
+    <div id="loginBox">
+      <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+      <form class="space-y-4">
+        <input type="email" placeholder="Email" class="w-full p-2 border rounded focus:ring-2 focus:ring-gray-500 outline-none" required />
+        <input type="password" placeholder="Password" class="w-full p-2 border rounded focus:ring-2 focus:ring-gray-500 outline-none" required />
+        <button type="submit" class="w-full bg-gray-700 text-white py-2 rounded hover:bg-gray-800 transition">Login</button>
+      </form>
+      <p class="text-sm text-center text-gray-600 mt-4">
+        Don’t have an account? <a href="#" id="showSignup" class="text-blue-600 hover:underline">Sign Up</a>
+      </p>
+    </div>
+
+    <!-- SIGNUP -->
+    <div id="signupBox" class="hidden">
+      <h2 class="text-2xl font-bold text-center mb-6">Sign Up</h2>
+     <form class="space-y-4">
+  <input type="text" placeholder="Full Name"
+         class="w-full p-2 border rounded focus:ring-2 focus:ring-gray-500 outline-none" required />
+  
+  <input type="email" placeholder="Email"
+         class="w-full p-2 border rounded focus:ring-2 focus:ring-gray-500 outline-none" required />
+  
+  <input type="password" placeholder="Password"
+         class="w-full p-2 border rounded focus:ring-2 focus:ring-gray-500 outline-none" required />
+  
+  <button type="submit"
+          class="w-full bg-gray-700 text-white py-2 rounded hover:bg-gray-800 transition">
+    Sign Up
+  </button>
+</form>
+
+      <p class="text-sm text-center text-gray-600 mt-4">
+        Already have an account? <a href="#" id="showLogin" class="text-blue-600 hover:underline">Login</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
   </header>
 
 
@@ -665,10 +714,82 @@
         </div>
       </section>
 
+
+<!-- Contact Us Section -->
+<section id="contact-us" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-gray-800 text-center mb-6 service-head">
+      Get in Touch with Zephyr Events
+    </h2>
+
+    <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
+      Have an event in mind? We’d love to help bring it to life. Reach out to us for inquiries,
+      event planning, or partnership opportunities. Our team in Kochi is always ready to assist you.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+      <!-- Contact Details -->
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Office</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Zephyr Event Management<br>
+            45/221, MG Road, Kochi, Kerala – 682016
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Contact Information</h3>
+          <p class="text-gray-700">
+            📞 <a href="tel:+9198765432100" class="text-blue-600 hover:underline">+91 98765 432100</a><br>
+            💬 <a href="https://wa.me/9198765432100" target="_blank" class="text-green-600 hover:underline">Chat on WhatsApp</a><br>
+            ✉️ <a href="mailto:info@zephyrevents.com" class="text-blue-600 hover:underline">info@zephyrevents.com</a>
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Business Hours</h3>
+          <p class="text-gray-700">
+            Monday – Saturday: 9:00 AM – 6:00 PM<br>
+            Sunday: Closed
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white rounded-lg shadow-lg p-8">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Send us a Message</h3>
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full p-3 border rounded focus:ring-2 focus:ring-gray-500 outline-none" required>
+          <input type="email" placeholder="Your Email" class="w-full p-3 border rounded focus:ring-2 focus:ring-gray-500 outline-none" required>
+          <textarea placeholder="Your Message" rows="4" class="w-full p-3 border rounded focus:ring-2 focus:ring-gray-500 outline-none" required></textarea>
+          <button type="submit" class="w-full px-6 py-3 rounded-lg text-sm font-semibold transition duration-300 no-underline bttn-2">Send Message</button>
+
+          
+        </form>
+      </div>
+    </div>
+
+    <!-- Optional Map -->
+    <div class="mt-12 flex justify-center">
+      <iframe
+        class="w-full max-w-3xl h-64 rounded-lg shadow-md"
+        src="https://www.google.com/maps?q=Kochi,+Kerala,+India&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
+
+
       <!-- Include necessary JavaScript files -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
 
            <footer class="bg-gray-900 text-white text-center py-4 mt-8">
   <p>&copy; 2025 Zephyr Events | All Rights Reserved</p>
